@@ -18,7 +18,7 @@ body_font = ("Times New Roman", 16)
 shifts = ['1', '2', '3', '4']
 workstations = ['Alpha Enrobing', 'Alpha Handpack', 'Bravo Enrobing', 'Bravo Packaging', 'Charlie Enrobing',
                 'Charlie Packaging', 'Delta Enrobing', 'Delta Packaging', 'Echo Enrobing', 'Echo Packaging', 'Hayssen',
-                'Kitchen Chocotech', 'SN']
+                'Kitchen Chocotech', 'SN', 'Sig 1', 'Sig 2']
 
 
 class hand_over(tk.Tk):
