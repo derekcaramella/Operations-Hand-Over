@@ -85,7 +85,7 @@ class entry_page(tk.Frame):
         entry_page_title_entry_var = tk.StringVar()
         entry_page_title_entry = tk.Entry(self, textvariable=entry_page_title_entry_var, font=body_font, bd=2)
         entry_page_title_entry.grid(row=5, column=1, padx=5)
-        entry_page_message_entry = tk.Text(self, height=11, width=20, font=body_font, bd=2)
+        entry_page_message_entry = tk.Text(self, height=11, width=20, font=body_font, bd=2, wrap='word')
         entry_page_message_entry.grid(row=6, column=1, columnspan=3, pady=10, padx=5, sticky='W')
 
         switch_screen_button = tk.Button(self, text='Review Past Entries', font=body_font, bd=2,
@@ -152,7 +152,7 @@ class retrieval_page(tk.Frame):
                 label.grid(row=2, column=column, columnspan=2, padx=5, sticky='NSEW')
                 label = tk.Label(self, text=row[4], font=("Times New Roman", 12), bg=bg)
                 label.grid(row=3, column=column, columnspan=2, padx=5, sticky='NSEW')
-                label = tk.Text(self, height=15, width=10, font=("Times New Roman", 12), bd=0, bg=bg)
+                label = tk.Text(self, height=15, width=10, font=("Times New Roman", 12), bd=0, bg=bg, wrap='word')
                 label.insert(1.0, row[5])
                 label.grid(row=4, column=column, columnspan=2, padx=5, sticky='NSEW')
                 column += 2
